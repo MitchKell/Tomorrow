@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="optBackground" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="559.0" prefWidth="445.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.OptionsController">
+   <children>
+      <ChoiceBox id="eveTypeOpts" layoutX="115.0" layoutY="327.0" prefWidth="150.0" />
+      <ColorPicker id="highCol" layoutX="242.0" layoutY="146.0" />
+      <Label id="optTitle" layoutX="159.0" layoutY="32.0" text="Options">
+         <font>
+            <Font name="MS Gothic" size="28.0" />
+         </font>
+      </Label>
+      <Label id="usNaTitle" layoutX="12.0" layoutY="102.0" text="User Name" />
+      <Label id="eveTypeTtitle" layoutX="11.0" layoutY="331.0" text="Event Types" />
+      <Label id="cSchTitle" layoutX="13.0" layoutY="389.0" text="Color Scheme" />
+      <Label id="priCol" layoutX="12.0" layoutY="150.0" text="Priority Colors" />
+      <Separator layoutY="76.0" prefHeight="18.0" prefWidth="445.0" />
+      <TextField id="username" layoutX="107.0" layoutY="98.0" />
+      <ColorPicker id="medCol" layoutX="242.0" layoutY="180.0" />
+      <ColorPicker id="lowCol" layoutX="242.0" layoutY="213.0" />
+      <Label id="highColTitle" layoutX="127.0" layoutY="152.0" text="High Priority" />
+      <Label id="medColTitle" layoutX="127.0" layoutY="185.0" text="Medium Priority" />
+      <Label id="lowColTitle" layoutX="127.0" layoutY="217.0" text="Low Priority" />
+      <ChoiceBox id="cSchOpts" layoutX="115.0" layoutY="385.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

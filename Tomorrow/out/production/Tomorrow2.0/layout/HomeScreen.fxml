@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="background" fx:id="background" prefHeight="597.0" prefWidth="803.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeController">
+   <children>
+      <TabPane id="tabPane" fx:id="tabs" layoutY="107.0" prefHeight="490.0" prefWidth="803.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab id="allEveTab" fx:id="allEvents" text="All Events">
+            <content>
+              <AnchorPane id="allEveBack" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+          <Tab id="highTab" text="High Priority">
+            <content>
+              <AnchorPane id="highTabBack" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+            <Tab id="medTab" text="Medium Priority">
+              <content>
+                <AnchorPane id="medTabBack" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab id="lowTab" text="Low Priority">
+              <content>
+                <AnchorPane id="lowTabBack" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <Button id="optBut" fx:id="optionsBut" layoutX="59.0" layoutY="47.0" mnemonicParsing="false" onAction="#openOptions" text="Options" />
+      <Button id="newEveBut" layoutX="674.0" layoutY="47.0" mnemonicParsing="false" onAction="#openEvent" text="New Event" />
+      <Label id="homeTitle" layoutX="308.0" layoutY="35.0" text="Tomorrow">
+         <font>
+            <Font name="MS Gothic" size="45.0" />
+         </font></Label>
+      <Separator id="homeSep" layoutX="-4.0" layoutY="105.0" prefHeight="4.0" prefWidth="803.0" />
+   </children>
+</AnchorPane>
